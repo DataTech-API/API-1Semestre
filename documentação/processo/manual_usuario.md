@@ -4,7 +4,7 @@
 1. Execute o programa no **VisualG** (tecla `F9`).
 2. O menu principal será exibido com 8 opções.
 3. Digite o número da opção desejada e pressione **Enter**.
-4. Siga as instruções exibidas na tela.
+4. Siga as instruções exibidas na tela. 
 
 ---
 
