@@ -3,7 +3,7 @@
 Este projeto utiliza uma estratégia simplificada de branches para organizar o desenvolvimento.
 
 ----
-
+ 
 ## Prazo para Último Commit e PR
 
 - O padrão da equipe era de até no máximo, **sábado 23h59**, para que o QA consiga testar o código e sugerir mudanças. 
