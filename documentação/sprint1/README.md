@@ -2,7 +2,7 @@
 
 > Status da Sprint: Concluída ✅
 > 
-
+ 
 ## 📋 sprint backlog  <a id="us"></a>
 
 | Rank | Prioridade | User Story                                                                                                                                                                                                                 | Sprint |
