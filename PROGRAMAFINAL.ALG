@@ -1,11 +1,11 @@
 Algoritmo "semnome"
 // Disciplina   : algoritmos/api
 // Professor   : sabah
-// Descrição   : menu da calculadora
+// DescriÃ§Ã£o   : menu da calculadora
 // Autor(a)    : andre s junqueira
 // Data atual  : 25/09/2025
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    opcao:inteiro
    i, n, quadrado,SomaAcumulada: inteiro
    numero1,numero2,razao:inteiro
@@ -24,25 +24,25 @@ Inicio
       escreval ("   03 - Fibonacci")
       escreval ("   04 - Tribonacci")
       escreval ("   05 - Quadrado Perfeito")
-      escreval ("   06 - Sequencia geométrica")
+      escreval ("   06 - Sequencia geomÃ©trica")
       escreval ("   07 - Sequencia de cubos")
       escreval ("   08 - Sair")
       escreval ("")
       escreval ("=======================================")
-      escreval ("Digite a opção desejada: ")
+      escreval ("Digite a opÃ§Ã£o desejada: ")
       leia (opcao)
       limpatela
 
       se opcao = 1 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 01 - Numeros Primos")
-         Escreval ("Em manutenção")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 01 - Numeros Primos")
+         Escreval ("Em manutenÃ§Ã£o")
          escreval ("---------------------------------------")
       fimse
 
       se opcao = 2 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 02 - Fatorial")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 02 - Fatorial")
          // Exibindo o Fatorial
          repita
             escreva ("Informe o fatorial que deseja calcular: ")
@@ -64,7 +64,7 @@ Inicio
 
 
             escreval ("")
-            escreval ("O fatorial de:", N, " é igual a:", Resultado)
+            escreval ("O fatorial de:", N, " Ã© igual a:", Resultado)
             escreval ("")
 
             // Exibindo em lista o Fatorial
@@ -74,7 +74,7 @@ Inicio
                Resultado <- Resultado * I
 
                se I = 1 entao
-                  escreva ("Sequência:", Resultado)
+                  escreva ("SequÃªncia:", Resultado)
                senao
                   escreva (" X", I)
 
@@ -87,33 +87,33 @@ Inicio
             //Menu
             escreval ("")
             repita
-               escreval ("Deseja calcular mais uma vez? sim/não ")
+               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
                leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "não") entao
+               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
                   limpatela
-                  escreval ("Entrada inválida!")
+                  escreval ("Entrada invÃ¡lida!")
                fimse
-            até (Repetir="sim") ou (Repetir="não")
+            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
             limpatela
             escreval ("Resultado anterior: =", Resultado)
             escreval ("")
 
-         até (Repetir = "não")
+         atÃ© (Repetir = "nÃ£o")
 
          escreval ("---------------------------------------")
       fimse
 
       se opcao = 3 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 03 - Sequencia de Fibonacci")
-         Escreval ("Em manutenção")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 03 - Sequencia de Fibonacci")
+         Escreval ("Em manutenÃ§Ã£o")
          escreval ("---------------------------------------")
       fimse
 
       se opcao = 4 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 04 - Sequencia de Tribonacci")
-         Escreval ("Em manutenção")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 04 - Sequencia de Tribonacci")
+         Escreval ("Em manutenÃ§Ã£o")
          escreval ("---------------------------------------")
       fimse
 
@@ -121,13 +121,13 @@ Inicio
 
          repita
             escreval ("---------------------------------------")
-            escreval (" Você escolheu a opção 05 - Quadrados Perfeitos")
-            // Função quadrados perfeitos
-            escreval ("Digite um número para obter os quadrados perfeitos em ordem crescente")
+            escreval (" VocÃª escolheu a opÃ§Ã£o 05 - Quadrados Perfeitos")
+            // FunÃ§Ã£o quadrados perfeitos
+            escreval ("Digite um nÃºmero para obter os quadrados perfeitos em ordem crescente")
             leia (n)
             limpatela
             SomaAcumulada <- 0
-            para i de 1 até N faça
+            para i de 1 atÃ© N faÃ§a
                quadrado <- i*i
                SomaAcumulada <-somaAcumulada + quadrado
                escreval(quadrado, "|", SomaAcumulada)
@@ -135,18 +135,18 @@ Inicio
             // Pergunta para repetir ou parar o programa
             escreval ("")
             repita
-               escreval ("Deseja calcular mais uma vez? sim/não ")
+               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
                leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "não") entao
+               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
                   limpatela
-                  escreval ("Entrada inválida!")
+                  escreval ("Entrada invÃ¡lida!")
                fimse
-            até (Repetir="sim") ou (Repetir="não")
+            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
             limpatela
             escreval ("Resultado anterior: =", Resultado)
             escreval ("")
 
-         até (Repetir = "não")
+         atÃ© (Repetir = "nÃ£o")
 
          escreval ("---------------------------------------")
 
@@ -155,10 +155,10 @@ Inicio
       se opcao = 6 entao
          Repita
             escreval ("---------------------------------------")
-            escreval (" Você escolheu a opção 06 - Sequencia geométrica")
+            escreval (" VocÃª escolheu a opÃ§Ã£o 06 - Sequencia geomÃ©trica")
             escreval ("---------------------------------------")
             Limpatela
-            Escreval("Você quer uma sequencia crescente ou decrescente?")
+            Escreval("VocÃª quer uma sequencia crescente ou decrescente?")
             Escreval("(1) para crescente")
             Escreval("(2) para decrescente")
             leia(ordem)
@@ -167,13 +167,13 @@ Inicio
                limpatela
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
-               Escreval("Me fale a razão")
+               Escreval("Me fale a razÃ£o")
                leia(razao)
                Escreval("Qual o numeo de termos")
                leia(numero2)
                limpatela
                resultado <- numero1
-               escreval("A sequencia geometrica crescente é")
+               escreval("A sequencia geometrica crescente Ã©")
                Para i de 1 ate numero2 faca
                   Escreval(i, "|", resultado)
                   resultado<-resultado*razao
@@ -183,7 +183,7 @@ Inicio
                limpatela
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
-               Escreval("Me fale a razão")
+               Escreval("Me fale a razÃ£o")
                leia(razao)
                Escreval("Qual o numeo de termos")
                leia(numero2)
@@ -205,18 +205,18 @@ Inicio
             // Pergunta para repetir ou parar o programa
             escreval ("")
             repita
-               escreval ("Deseja calcular mais uma vez? sim/não ")
+               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
                leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "não") entao
+               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
                   limpatela
-                  escreval ("Entrada inválida!")
+                  escreval ("Entrada invÃ¡lida!")
                fimse
-            até (Repetir="sim") ou (Repetir="não")
+            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
             limpatela
             escreval ("Resultado anterior: =", Resultado)
             escreval ("")
 
-         até (Repetir = "não")
+         atÃ© (Repetir = "nÃ£o")
 
          escreval ("---------------------------------------")
 
@@ -224,45 +224,45 @@ Inicio
 
       se opcao = 7 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 07 - Sequencia de cubos")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 07 - Sequencia de cubos")
          escreval ("---------------------------------------")
          repita
-            escreval("Digite o número da posição em que deseja iniciar:")
+            escreval("Digite o nÃºmero da posiÃ§Ã£o em que deseja iniciar:")
             leia(numero1)
-            escreval("Digite até qual posição deseja vizualizar:")
+            escreval("Digite atÃ© qual posiÃ§Ã£o deseja vizualizar:")
             leia(numero2)
             limpatela
 
-            //operação da sêquencia com o contador
+            //operaÃ§Ã£o da sÃªquencia com o contador
             para i de numero1 ate numero2 faca
-               escrevaL(i, "² =", (i*i), ",",  i, "³ =", (i*i*i))
+               escrevaL(i, "Â² =", (i*i), ",",  i, "Â³ =", (i*i*i))
             fimpara
 
             // Pergunta para repetir ou parar o programa
             escreval ("")
             repita
-               escreval ("Deseja calcular mais uma vez? sim/não ")
+               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
                leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "não") entao
+               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
                   limpatela
-                  escreval ("Entrada inválida!")
+                  escreval ("Entrada invÃ¡lida!")
                fimse
-            até (Repetir="sim") ou (Repetir="não")
+            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
             limpatela
-            escreval ("Resultado anterior: =", Resultado)
+            //escreval ("Resultado anterior: =", Resultado)
             escreval ("")
 
-         até (Repetir = "não")
+         atÃ© (Repetir = "nÃ£o")
 
          escreval ("---------------------------------------")
       fimse
 
-      // Validação da resposta para repetir ou parar o programa
+      // ValidaÃ§Ã£o da resposta para repetir ou parar o programa
 
 
       se opcao = 8 entao
          escreval ("---------------------------------------")
-         escreval (" Você escolheu a opção 08 - SAIR")
+         escreval (" VocÃª escolheu a opÃ§Ã£o 08 - SAIR")
          escreval ("---------------------------------------")
       fimse
 
