@@ -5,7 +5,7 @@
 - Espaço em disco: **mínimo 50 MB**
 - Programas necessários:
   - [VisualG]([http://visualg3.com.br/baixar/](https://sourceforge.net/projects/visualg30)) instalado
-
+ 
 ---
 
 ## 🔧 Instalação do VisualG
