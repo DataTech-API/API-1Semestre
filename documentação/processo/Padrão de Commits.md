@@ -1,7 +1,7 @@
 # Padrão de Commits
 
 Este projeto utiliza um padrão de commits para manter o repositório limpo, legível e automatizar geração de changelogs.
-
+ 
 ## Formato do commit
 Cada mensagem de commit deve seguir o formato:
 ```
