@@ -39,6 +39,7 @@ Inicio
       se opcao = 1 entao
          escreval ("---------------------------------------")
          escreval (" Você escolheu a opção 01 - Numeros Primos")
+         escreval ("---------------------------------------")
          Escreval ("Em manutenção")
          escreval ("---------------------------------------")
       fimse
@@ -46,10 +47,18 @@ Inicio
       se opcao = 2 entao
          escreval ("---------------------------------------")
          escreval (" Você escolheu a opção 02 - Fatorial")
+         escreval ("---------------------------------------")
          // Exibindo o Fatorial
          repita
-            escreva ("Informe o fatorial que deseja calcular: ")
+            escreva ("Informe um número de 0 até 170 para calcular o fatorial: ")
             leia (N)
+
+            enquanto (N<0) ou (N>170) faça
+               escreval ("Número inválido! Digite um número de 0 até 170 para calcular o fatorial.")
+               leia(n)
+               limpatela
+            fimenquanto
+
             escreval ("")
             limpatela
             Resultado <- 1
@@ -109,6 +118,7 @@ Inicio
       se opcao = 3 entao
          escreval ("---------------------------------------")
          escreval (" Você escolheu a opção 03 - Sequencia de Fibonacci")
+         escreval ("---------------------------------------")
          Escreval ("Em manutenção")
          escreval ("---------------------------------------")
       fimse
@@ -116,6 +126,7 @@ Inicio
       se opcao = 4 entao
          escreval ("---------------------------------------")
          escreval (" Você escolheu a opção 04 - Sequencia de Tribonacci")
+         escreval ("---------------------------------------")
          Escreval ("Em manutenção")
          escreval ("---------------------------------------")
       fimse
@@ -125,8 +136,9 @@ Inicio
          repita
             escreval ("---------------------------------------")
             escreval (" Você escolheu a opção 05 - Quadrados Perfeitos")
+            escreval ("---------------------------------------")
             // Função quadrados perfeitos
-            escreval ("Digite um número para obter os quadrados perfeitos em ordem crescente")
+            escreval ("Digite um número para obter os quadrados perfeitos crescentes")
             leia (n)
             limpatela
             SomaAcumulada <- 0
@@ -157,17 +169,18 @@ Inicio
 
       se opcao = 6 entao
          Repita
+            Limpatela
             escreval ("---------------------------------------")
             escreval (" Você escolheu a opção 06 - Sequencia geométrica")
             escreval ("---------------------------------------")
-            Limpatela
             Escreval("Você quer uma sequencia crescente ou decrescente?")
+            escreval ("")
             Escreval("(1) para crescente")
             Escreval("(2) para decrescente")
             leia(ordem)
-            se ordem <= 1 entao
-               escreval("escolheu crescente")
+            se ordem <=1 entao
                limpatela
+               escreval("Escolheu crescente!")
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
                Escreval("Me fale a razão")
@@ -181,9 +194,9 @@ Inicio
                   Escreval(i, "|", resultado)
                   resultado<-resultado*razao
                fimpara
-            senao ordem <= 2 entao
-               escreval("escolheu decrescente")
+            senao ordem <=2 entao
                limpatela
+               escreval("Escolheu decrescente!")
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
                Escreval("Me fale a razão")
@@ -202,7 +215,6 @@ Inicio
                   menos <- menos/razao
                   escreval(i,"|", menos)
                fimpara
-
 
             fimse
             // Pergunta para repetir ou parar o programa
