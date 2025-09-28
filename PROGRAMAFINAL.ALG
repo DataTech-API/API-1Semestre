@@ -9,7 +9,8 @@ Var
    opcao:inteiro
    i, n, quadrado,SomaAcumulada: inteiro
    numero1,numero2,razao:inteiro
-   Resultado,ordem, ResultadoAnt: inteiro
+   Resultado, ResultadoAnt: real 
+   ordem: inteiro 
    Repetir: caractere
    menos: real
 
