@@ -54,7 +54,8 @@ Inicio
             leia (N)
 
             enquanto (N<0) ou (N>170) faça
-               escreval ("Número inválido! Digite um número de 0 até 170 para calcular o fatorial.")
+               escreval ("Entrada inválida!")
+               escreval ("Digite um número de 0 até 170 para calcular o fatorial.")
                leia(n)
                limpatela
             fimenquanto
@@ -175,19 +176,24 @@ Inicio
             escreval ("---------------------------------------")
             Escreval("Você quer uma sequencia crescente ou decrescente?")
             escreval ("")
-            Escreval("(1) para crescente")
-            Escreval("(2) para decrescente")
+            Escreval("(0) para crescente")
+            Escreval("(1) para decrescente")
             leia(ordem)
 
-            enquanto ordem  >= 3 faça
-            limpatela
-                escreval ("Número inválido! Digite o número 1 para crescente ou numero 2 para descrente ")
-            leia(ordem)
+            enquanto ordem >= 2 faça
+               limpatela
+               escreval ("Entrada inválida!")
+               Escreval("Você quer uma sequencia crescente ou decrescente? 0/1")
+               escreval ("")
+               Escreval("(0) para crescente")
+               Escreval("(1) para decrescente")
+               leia(ordem)
             fimenquanto
-            
-            se ordem =1 entao
+
+            se ordem =0 entao
                limpatela
                escreval("Escolheu crescente!")
+               escreval ("---------------------------------------")
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
                Escreval("Me fale a razão")
@@ -201,9 +207,10 @@ Inicio
                   Escreval(i, "|", resultado)
                   resultado<-resultado*razao
                fimpara
-            se ordem = 2 entao
+            senao
                limpatela
                escreval("Escolheu decrescente!")
+               escreval ("---------------------------------------")
                Escreval("Me fale o primeiro termo")
                Leia(numero1)
                Escreval("Me fale a razão")
@@ -212,11 +219,9 @@ Inicio
                leia(numero2)
                limpatela
                resultado <- numero1
-               Para i de 1 ate 2 faca
+               Para i de 1 ate numero2 faca
                   resultado<-resultado*razao
                fimpara
-               senão escreval("")
-               leia(ordem)
 
                menos<-resultado
 
@@ -224,6 +229,7 @@ Inicio
                   menos <- menos/razao
                   escreval(i,"|", menos)
                fimpara
+
 
             fimse
             // Pergunta para repetir ou parar o programa
@@ -294,4 +300,3 @@ Inicio
    fimenquanto
 
 Fimalgoritmo
-
