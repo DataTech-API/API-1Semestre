@@ -178,7 +178,14 @@ Inicio
             Escreval("(1) para crescente")
             Escreval("(2) para decrescente")
             leia(ordem)
-            se ordem <=1 entao
+
+            enquanto ordem  >= 3 faça
+            limpatela
+                escreval ("Número inválido! Digite o número 1 para crescente ou numero 2 para descrente ")
+            leia(ordem)
+            fimenquanto
+            
+            se ordem =1 entao
                limpatela
                escreval("Escolheu crescente!")
                Escreval("Me fale o primeiro termo")
@@ -194,7 +201,7 @@ Inicio
                   Escreval(i, "|", resultado)
                   resultado<-resultado*razao
                fimpara
-            senao ordem <=2 entao
+            se ordem = 2 entao
                limpatela
                escreval("Escolheu decrescente!")
                Escreval("Me fale o primeiro termo")
@@ -205,9 +212,11 @@ Inicio
                leia(numero2)
                limpatela
                resultado <- numero1
-               Para i de 1 ate numero2 faca
+               Para i de 1 ate 2 faca
                   resultado<-resultado*razao
                fimpara
+               senão escreval("")
+               leia(ordem)
 
                menos<-resultado
 
@@ -285,3 +294,4 @@ Inicio
    fimenquanto
 
 Fimalgoritmo
+
