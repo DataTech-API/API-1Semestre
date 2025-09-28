@@ -1,16 +1,18 @@
-Algoritmo "semnome"
+Algoritmo "calculadora_sequenciais"
+
 // Disciplina   : algoritmos/api
 // Professor   : sabah
 // Descrição   : menu da calculadora
 // Autor(a)    : andre s junqueira
 // Data atual  : 25/09/2025
+
 Var
    // Seção de Declarações das variáveis
    opcao:inteiro
    i, n, quadrado,SomaAcumulada: inteiro
    numero1,numero2,razao:inteiro
-   Resultado, ResultadoAnt: real 
-   ordem: inteiro 
+   Resultado, ResultadoAnt: real
+   ordem: inteiro
    Repetir: caractere
    menos: real
 
@@ -96,8 +98,8 @@ Inicio
                fimse
             até (Repetir="sim") ou (Repetir="não")
             limpatela
-            escreval ("Resultado anterior: =", Resultado)
-            escreval ("")
+            // escreval ("Resultado anterior: =", Resultado)
+            // escreval ("")
 
          até (Repetir = "não")
 
@@ -144,8 +146,8 @@ Inicio
                fimse
             até (Repetir="sim") ou (Repetir="não")
             limpatela
-            escreval ("Resultado anterior: =", Resultado)
-            escreval ("")
+            // escreval ("Resultado anterior: =", Resultado)
+            // escreval ("")
 
          até (Repetir = "não")
 
@@ -170,7 +172,7 @@ Inicio
                Leia(numero1)
                Escreval("Me fale a razão")
                leia(razao)
-               Escreval("Qual o numeo de termos")
+               Escreval("Qual o numero de termos")
                leia(numero2)
                limpatela
                resultado <- numero1
@@ -186,7 +188,7 @@ Inicio
                Leia(numero1)
                Escreval("Me fale a razão")
                leia(razao)
-               Escreval("Qual o numeo de termos")
+               Escreval("Qual o numero de termos")
                leia(numero2)
                limpatela
                resultado <- numero1
@@ -214,8 +216,8 @@ Inicio
                fimse
             até (Repetir="sim") ou (Repetir="não")
             limpatela
-            escreval ("Resultado anterior: =", Resultado)
-            escreval ("")
+            // escreval ("Resultado anterior: =", Resultado)
+            // escreval ("")
 
          até (Repetir = "não")
 
@@ -251,7 +253,7 @@ Inicio
             até (Repetir="sim") ou (Repetir="não")
             limpatela
             //escreval ("Resultado anterior: =", Resultado)
-            escreval ("")
+            // escreval ("")
 
          até (Repetir = "não")
 
@@ -268,5 +270,6 @@ Inicio
       fimse
 
 
-fimenquanto
-fimalgoritmo
+   fimenquanto
+
+Fimalgoritmo
