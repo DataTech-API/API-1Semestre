@@ -139,7 +139,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
     <tr>
       <td>Julia Fernanda</td>
       <td>Desenvolvedor</td>
-      <td><a href="https://github.com/juliafernandasoares05-crypto"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://github.com/Caju-HQ"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/j%C3%BAlia-fernanda-440714315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
@@ -157,7 +157,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
     <tr>
       <td>Rafael Rodrigues</td>
       <td>Desenvolvedor</td>
-      <td><a href="https://github.com/Little-Juice"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://github.com/Rafael-SantosR"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/rafaels-rodrigues/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
   </table>
