@@ -44,7 +44,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 | Sprint | Período | Docs |
 | ------ | :-----: | ---- |
 | 1 | 08/09 - 28/09 | [Sprint 1 Docs](documentação/sprint1) |
-| 2 | 06/10 - 26/10 | ❌ |
+| 2 | 06/10 - 26/10 | [Sprint 2 Docs](documentação/sprint2) |
 | 3 | 03/11 - 23/11 | ❌ |
 
 
@@ -52,9 +52,9 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 
 | Sprint | Status | Docs |
 | ------ | :----: | ---- |
-| 1 | ✔️ | [Sprint 1 Docs](documentação/sprint1) |
-| 2 | ❌ | ❌ |
-| 3 | ❌ | ❌ |
+| 1 |  concluida | [Sprint 1 Docs](documentação/sprint1) |
+| 2 |  em andamento | [Sprint 2 Docs](documentação/sprint2) |
+| 3 |  não iniciada | ❌ |
 
 
 # 💻 Tecnologias <a id="tecnologias"></a>
