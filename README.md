@@ -1,7 +1,7 @@
 <h1 align="center"> Calculadora de Sequências Lógicas</h1>
 
 <p align="center">
-  <img src="documentação/imagem/upscalemedia-transformed.png width="200" alt="Calculadora">
+  <img src="documentação/imagem/upscalemedia-transformed.png" width="500" alt="Calculadora">
 </p>
 
 
