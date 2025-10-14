@@ -1,4 +1,6 @@
-Algoritmo "calculadora_sequenciais"
+ Algoritmo "calculadora_sequenciais"
+//  
+//  
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi
 
@@ -192,7 +194,7 @@ Inicio
                Escreval(i, "|", resultado)
                resultado<-resultado*razao
             fimpara
-            
+
             //Interacao para voltar ao Menu
             escreval("")
             escreva("Aperte ENTER para voltar ao Menu.")
@@ -220,14 +222,14 @@ Inicio
             Para i de 1 ate numero2 faca
                resultado<-resultado*razao
             fimpara
-            
+
             menos<-resultado
 
             para i de 1 ate numero2 faca
                menos <- menos/razao
                escreval(i,"|", menos)
             fimpara
-            
+
             //Interacao para voltar ao Menu
             escreval("")
             escreva("Aperte ENTER para voltar ao Menu.")
@@ -235,33 +237,32 @@ Inicio
             limpatela
          fimse
       fimse
-      
-      //Sequência de Cubos
-      se opcao = 7 entao
-      limpatela
-      escreval("---------------------------------------")
-      escreval("|       Sequencia de cubos            |")
-      escreval("---------------------------------------")
-      escreval("Gera uma sequência de números que são o resultado")
-      escreval("de um inteiro elevado à terceira potência")
-      escreval("---------------------------------------")
-      
-      escreval("Digite o número da posição em que deseja iniciar:")
-      leia(numero1)
-      escreval("Digite até qual posição deseja visualizar:")
-      leia(numero2)
-      limpatela
 
-      //Operação da sêquencia com o contador
-      para i de numero1 ate numero2 faca
-      escreval(i, "² =", (i*i), ",",  i, "³ =", (i*i*i))
-      fimpara
-      
-      //Interacao para voltar ao Menu
-            escreval("")
-            escreva("Aperte ENTER para voltar ao Menu.")
-            leia(saida)
-            limpatela
+      se opcao = 7 entao
+         limpatela
+         escreval("---------------------------------------")
+         escreval("|       Sequencia de cubos            |")
+         escreval("---------------------------------------")
+         escreval("Gera uma sequência de números que são o resultado")
+         escreval("de um inteiro elevado à terceira potência")
+         escreval("---------------------------------------")
+         escreval("Digite o número da posição em que deseja iniciar:")
+         leia(numero1)
+         escreval("Digite até qual posição deseja visualizar:")
+         leia(numero2)
+         limpatela
+         escreval("---------------------------------------------")
+         escreval(" Quadrados    Cubos")
+         escreval("---------------------------------------------")
+         //Operação da sêquencia com o contador
+         para i de numero1 ate numero2 faca
+            escreval(i, "² =", (i*i), ",", i, "³ =", (i*i*i))
+         fimpara
+         //Interacao para voltar ao Menu
+         escreval("")
+         escreva("Aperte ENTER para voltar ao Menu.")
+         leia(saida)
+         limpatela
       fimse
 
          se opcao = 8 entao
@@ -278,7 +279,7 @@ Inicio
          leia(saida)
          limpatela
       fimse
-      
+
             se opcao = 9 entao
          escreval("---------------------------------------")
          escreval("|       Números Triangulares          |")
@@ -293,19 +294,5 @@ Inicio
          leia(saida)
          limpatela
       fimse
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      
    fimenquanto
 fimalgoritmo
