@@ -1,7 +1,7 @@
 <h1 align="center"> Calculadora de Sequências Lógicas</h1>
 
 <p align="center">
-  <img src="documentação/imagem/logo2.png " width="350" alt="Calculadora">
+  <img src="documentação/imagem/data-tech-logo.png " width="350" alt="Calculadora">
 </p>
 
 
