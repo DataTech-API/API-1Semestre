@@ -1,27 +1,33 @@
 Algoritmo "calculadora_sequenciais"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
-
+// Professor  : Antonio Carlos Nicolodi
 // Disciplina   : API
-// Professor   : Sabha
-// Descrição   : Calculadora de Sequencia Logicas
-// Autor(a)    : DataTECH
-// Data atual  : 25/09/2025
+// Professor  : Sabha
+// Descrição  : Calculadora de Sequencia Logicas
+// Autor(a)   : DataTECH
+// Data atual : 25/09/2025
 
 Var
-   // Secao de Declaracoes das variaveis
-   opcao:inteiro
-   i, n, quadrado,SomaAcumulada: inteiro
-   numero1,numero2,razao:inteiro
-   Resultado, ResultadoAnt: real
-   ordem: inteiro
-   Repetir, saida: caractere
-   menos: real
+// --- Variáveis de Controle Principal (Menu e Loop) ---
+opcao: inteiro
+saida: caractere
+// --- Variável de Loop Genérica ---
+i: inteiro
+// --- Variáveis por Função (Caso) ---
+// caso 2 (Fatorial)
+numFatorial: inteiro
+resultadoFatorial, resultadoAnterior: real
+// caso 5 (Quadrado Perfeito)
+limiteQuadrados, quadradoAtual, somaAcumulada: inteiro
+// caso 6 (Sequência Geométrica)
+ordemPG,termoInicial, razaoPG,qtdeTermos : inteiro
+resultadoPG, termoDecrescente: real
+// caso 7 (Sequência de Cubos)
+inicioCubo, fimCubo: inteiro
+
 
 Inicio
-   //Opcao inicia com 101010 pois o padrão é iniciar com 0, o que fecharia
-   //o programa
-   opcao <- 101010
+   opcao <- 101010 // Valor inicial para entrar no loop
    enquanto opcao <> 0 faca
       escreval("=======================================")
       escreval("|       MENU CALCULADORA         |")
@@ -64,22 +70,22 @@ Inicio
          escreval("----------------------------------------")
 
          escreva ("Informe um número de 0 até 170 para calcular o fatorial: ")
-         leia (N)
+         leia (numFatorial)
          limpatela
+
          //Tratamento de excecao
-         enquanto (N<0) ou (N>170) faca
+         enquanto (numFatorial < 0) ou (numFatorial > 170) faca
             escreval ("Entrada inválida!")
             escreval ("Digite um número de 0 até 170 para calcular o fatorial.")
+            leia (numFatorial)
             limpatela
          fimenquanto
 
-         //Fórmula Fatorial (N! = N * (N - 1) * ... * 1)
-         //Variável Resultado recebe 1 pois qualquer número multiplicado por 0 = 0.
-         Resultado <- 1
-         para I <- 1 ate N faca
-            ResultadoAnt <- Resultado
-            Resultado <- Resultado * I
-            escreval((ResultadoAnt), " X", I, " =", Resultado)
+         resultadoFatorial <- 1
+         para i <- 1 ate numFatorial faca
+            resultadoAnterior <- resultadoFatorial
+            resultadoFatorial <- resultadoFatorial * i
+            escreval((resultadoAnterior), " X", i, " =", resultadoFatorial)
          fimpara
 
          //Fibonacci//
@@ -111,16 +117,15 @@ Inicio
          escreval("número inteiro multiplicado por si mesmo.")
          escreval("---------------------------------------")
          escreval("Digite um número para obter os quadrados perfeitos crescentes")
-         leia (n)
+         leia (limiteQuadrados)
          limpatela
-         //Formula Quadrados Perfeito (I * I) = x; N é até quando
-         //você deseja um número multiplicado.
-         SomaAcumulada <- 0
+
+         somaAcumulada <- 0
          escreval("N²   SA")
-         para i de 1 até N faca
-            quadrado <- i*i
-            SomaAcumulada <-somaAcumulada + quadrado
-            escreval(quadrado, "   ", SomaAcumulada)
+         para i de 1 até limiteQuadrados faca
+            quadradoAtual <- i*i
+            somaAcumulada <- somaAcumulada + quadradoAtual
+            escreval(quadradoAtual, "   ", somaAcumulada)
          fimpara
          escreval("***(SA)- Soma Acumulada")
 
@@ -132,63 +137,62 @@ Inicio
          escreval("---------------------------------------")
          Escreval("Digite [0] Crescente / [1] Decrescente")
          escreval("")
-         leia(ordem)
+         leia(ordemPG)
 
          //Tratamento de excecao
-         enquanto (ordem <> 0) e (ordem <> 1) faca // Corrigido para aceitar 0 ou 1
+         enquanto (ordemPG <> 0) e (ordemPG <> 1) faca
             limpatela
             escreval("Entrada inválida!")
             Escreval("Digite [0] Crescente / [1] Decrescente")
             escreval("")
-            leia(ordem)
+            leia(ordemPG)
          fimenquanto
 
          //Sequencia Geometrica Crescente
-         se ordem = 0 entao
+         se ordemPG = 0 entao
             limpatela
             escreval("Sequência Geométria Crescente")
             escreval("---------------------------------------")
             escreva("Digite o primeiro termo: ")
-            leia(numero1)
+            leia(termoInicial)
             escreva("Digite a razão: ")
-            leia(razao)
+            leia(razaoPG)
             escreva("Digite a quantidade de termos: ")
-            leia(numero2)
+            leia(qtdeTermos)
             limpatela
 
             //Cálculo - Crescente
-            resultado <- numero1
+            resultadoPG <- termoInicial
             escreval("A sequencia geometrica crescente é: ")
-            Para i de 1 ate numero2 faca
-               Escreval(i, "|", resultado)
-               resultado<-resultado*razao
+            Para i de 1 ate qtdeTermos faca
+               Escreval(i, "|", resultadoPG)
+               resultadoPG <- resultadoPG * razaoPG
             fimpara
 
             //Sequencia Geometrica Decrescente
          senao
             limpatela
-            // Corrigido o título que estava "Crescente" no seu original
             escreval("Sequência Geométria Decrescente")
             escreval("---------------------------------------")
             escreva("Digite o primeiro termo: ")
-            leia(numero1)
+            leia(termoInicial)
             escreva("Digite a razão: ")
-            leia(razao)
+            leia(razaoPG)
             escreva("Digite a quantidade de termos: ")
-            leia(numero2)
+            leia(qtdeTermos)
             limpatela
 
             //Cálculo - Decrescente
-            resultado <- numero1
-            Para i de 1 ate numero2 faca
-               resultado<-resultado*razao
+            resultadoPG <- termoInicial
+            Para i de 1 ate qtdeTermos faca
+               resultadoPG <- resultadoPG * razaoPG
             fimpara
 
-            menos<-resultado
+            termoDecrescente <- resultadoPG
 
-            para i de 1 ate numero2 faca
-               menos <- menos/razao
-               escreval(i,"|", menos)
+            para i de 1 ate qtdeTermos faca
+               termoDecrescente <- termoDecrescente / razaoPG
+               escreval(i,"|", termoDecrescente)
             fimpara
          fimse
 
@@ -202,15 +206,15 @@ Inicio
          escreval("de um inteiro elevado à terceira potência")
          escreval("---------------------------------------")
          escreval("Digite o número da posição em que deseja iniciar:")
-         leia(numero1)
+         leia(inicioCubo)
          escreval("Digite até qual posição deseja visualizar:")
-         leia(numero2)
+         leia(fimCubo)
          limpatela
          escreval("---------------------------------------------")
          escreval(" Quadrados   Cubos")
          escreval("---------------------------------------------")
          //Operação da sêquencia com o contador
-         para i de numero1 ate numero2 faca
+         para i de inicioCubo ate fimCubo faca
             escreval(i, "² =", (i*i), ",", i, "³ =", (i*i*i))
          fimpara
 
@@ -244,17 +248,17 @@ Inicio
          escreval("         Opção inválida!         ")
          escreval("Por favor, digite um número do menu.")
          escreval("---------------------------------------")
-         escreval("")
-         escreva("Aperte ENTER para voltar ao Menu.")
-         leia(saida)
-         limpatela
 
       fimescolha // Fim da estrutura 'escolha'
 
-      escreval("")
-      escreva("Aperte ENTER para voltar ao Menu.")
-      leia(saida)
-      limpatela
-      
+      // Bloco de pausa centralizado
+      // Só executa se a opção não for SAIR (0)
+      se (opcao <> 0) entao
+         escreval("")
+         escreva("Aperte ENTER para voltar ao Menu.")
+         leia(saida) // REVERTIDO DE 'pausa'
+         limpatela
+      fimse
+
    fimenquanto // Fim do loop principal
 fimalgoritmo
