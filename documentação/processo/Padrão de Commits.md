@@ -20,3 +20,10 @@ nome-task-tipo: descrição breve
 - **SCRUM-21-feat:** - adicionar endpoint de listagem de usuários.
 - **SCRUM-21-fix:** - corrigir erro de validação no login.
 - **SCRUM-21-docs:** - atualizar instruções de instalação.
+
+E, quando há mais de uma task relacionada ao mesmo commit, você pode listá-las separadas por vírgula. 
+
+### Exemplos:
+- **SCRUM-21, SCRUM-22-feat**: adicionar endpoints de listagem e criação de usuários
+- **SCRUM-33, SCRUM-34-fix:** corrigir validação de login e atualização de senha
+- **SCRUM-40, SCRUM-41-docs**: atualizar README e guia de instalação
