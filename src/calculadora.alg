@@ -1,302 +1,264 @@
 Algoritmo "calculadora_sequenciais"
-
-// Disciplina   : algoritmos/api
-// Professor   : sabah
-// DescriÃ§Ã£o   : menu da calculadora
-// Autor(a)    : andre s junqueira
-// Data atual  : 25/09/2025
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor  : Antonio Carlos Nicolodi
+// Disciplina   : API
+// Professor  : Sabha
+// Descrição  : Calculadora de Sequencia Logicas
+// Autor(a)   : DataTECH
+// Data atual : 25/09/2025
 
 Var
-   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
-   opcao:inteiro
-   i, n, quadrado,SomaAcumulada: inteiro
-   numero1,numero2,razao:inteiro
-   Resultado, ResultadoAnt: real
-   ordem: inteiro
-   Repetir: caractere
-   menos: real
+// --- Variáveis de Controle Principal (Menu e Loop) ---
+opcao: inteiro
+saida: caractere
+// --- Variável de Loop Genérica ---
+i: inteiro
+// --- Variáveis por Função (Caso) ---
+// caso 2 (Fatorial)
+numFatorial: inteiro
+resultadoFatorial, resultadoAnterior: real
+// caso 5 (Quadrado Perfeito)
+limiteQuadrados, quadradoAtual, somaAcumulada: inteiro
+// caso 6 (Sequência Geométrica)
+ordemPG,termoInicial, razaoPG,qtdeTermos : inteiro
+resultadoPG, termoDecrescente: real
+// caso 7 (Sequência de Cubos)
+inicioCubo, fimCubo: inteiro
+
 
 Inicio
-   enquanto opcao <> 8 faca
-      escreval ("=======================================")
-      escreval ("         MENU CALCULADORA             ")
-      escreval ("=======================================")
-      escreval ("")
-      escreval ("   01 - Numeros Primos ")
-      escreval ("   02 - Fatorial ")
-      escreval ("   03 - Fibonacci")
-      escreval ("   04 - Tribonacci")
-      escreval ("   05 - Quadrado Perfeito")
-      escreval ("   06 - Sequencia geomÃ©trica")
-      escreval ("   07 - Sequencia de cubos")
-      escreval ("   08 - Sair")
-      escreval ("")
-      escreval ("=======================================")
-      escreval ("Digite a opÃ§Ã£o desejada: ")
+   opcao <- 101010 // Valor inicial para entrar no loop
+   enquanto opcao <> 0 faca
+      escreval("=======================================")
+      escreval("|       MENU CALCULADORA         |")
+      escreval("=======================================")
+      escreval("")
+      escreval("   01 - Números primos *EM BREVE*")
+      escreval("   02 - Fatorial ")
+      escreval("   03 - Fibonacci *EM BREVE*")
+      escreval("   04 - Tribonacci *EM BREVE*")
+      escreval("   05 - Quadrado perfeito")
+      escreval("   06 - Sequência geométrica")
+      escreval("   07 - Sequência de cubos")
+      escreval("   08 - Sequência alternada")
+      escreval("   09 - Números triangulares")
+      escreval("   00 - Sair")
+      escreval("")
+      escreval("=======================================")
+      escreval ("Digite a opção desejada: ")
       leia (opcao)
       limpatela
 
-      se opcao = 1 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 01 - Numeros Primos")
-         escreval ("---------------------------------------")
-         Escreval ("Em manutenÃ§Ã£o")
-         escreval ("---------------------------------------")
-      fimse
+      escolha (opcao)
+         //Numeros Primos//
+      caso 1
+         escreval("---------------------------------------")
+         escreval("|       Números Primos         |")
+         escreval("---------------------------------------")
+         escreval("Identifica números que são divisíveis")
+         escreval("apenas por 1 e por eles próprios.")
+         escreval("---------------------------------------")
+         escreval("EM BREVE!")
 
-      se opcao = 2 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 02 - Fatorial")
-         escreval ("---------------------------------------")
-         // Exibindo o Fatorial
-         repita
-            escreva ("Informe um nÃºmero de 0 atÃ© 170 para calcular o fatorial: ")
-            leia (N)
+         //Fatorial//
+      caso 2
+         escreval("----------------------------------------")
+         escreval("|          Fatorial           |")
+         escreval("----------------------------------------")
+         escreval("Calcula o produto de um número por todos")
+         escreval("os seus antecessores inteiros positivos.")
+         escreval("----------------------------------------")
 
-            enquanto (N<0) ou (N>170) faÃ§a
-               escreval ("Entrada invÃ¡lida!")
-               escreval ("Digite um nÃºmero de 0 atÃ© 170 para calcular o fatorial.")
-               leia(n)
-               limpatela
-            fimenquanto
+         escreva ("Informe um número de 0 até 170 para calcular o fatorial: ")
+         leia (numFatorial)
+         limpatela
 
-            escreval ("")
+         //Tratamento de excecao
+         enquanto (numFatorial < 0) ou (numFatorial > 170) faca
+            escreval ("Entrada inválida!")
+            escreval ("Digite um número de 0 até 170 para calcular o fatorial.")
+            leia (numFatorial)
             limpatela
-            Resultado <- 1
-            para I <- 1 ate N passo 1 faca
-               ResultadoAnt <- Resultado
-               Resultado <- Resultado * I
+         fimenquanto
 
-               se I = 1 entao
-                  escreval (I, " =", Resultado:0:0)
-               senao
-                  escreval ((ResultadoAnt), " X", I, " =", Resultado)
+         resultadoFatorial <- 1
+         para i <- 1 ate numFatorial faca
+            resultadoAnterior <- resultadoFatorial
+            resultadoFatorial <- resultadoFatorial * i
+            escreval((resultadoAnterior), " X", i, " =", resultadoFatorial)
+         fimpara
 
-               fimse
+         //Fibonacci//
+      caso 3
+         escreval("---------------------------------------")
+         escreval("|     Sequência de Fibonacci     |")
+         escreval("---------------------------------------")
+         escreval("Gera uma sequência onde cada número é a")
+         escreval("soma dos dois anteriores.")
+         escreval("---------------------------------------")
+         escreval("EM BREVE!")
+
+         //Tribonacci//
+      caso 4
+         escreval("---------------------------------------")
+         escreval("     Sequência de Tribonacci       ")
+         escreval("---------------------------------------")
+         escreval("Gera uma sequência onde cada número é a")
+         escreval("soma dos três anteriores")
+         escreval("---------------------------------------")
+         escreval("EM BREVE!")
+
+         //Quadrados Perfeitos//
+      caso 5
+         escreval("---------------------------------------")
+         escreval("|      Quadrados Perfeitos       |")
+         escreval("---------------------------------------")
+         escreval("Verifica se um número é o resultado de outro")
+         escreval("número inteiro multiplicado por si mesmo.")
+         escreval("---------------------------------------")
+         escreval("Digite um número para obter os quadrados perfeitos crescentes")
+         leia (limiteQuadrados)
+         limpatela
+
+         somaAcumulada <- 0
+         escreval("N²   SA")
+         para i de 1 até limiteQuadrados faca
+            quadradoAtual <- i*i
+            somaAcumulada <- somaAcumulada + quadradoAtual
+            escreval(quadradoAtual, "   ", somaAcumulada)
+         fimpara
+         escreval("***(SA)- Soma Acumulada")
+
+         //Sequencia Geometrica
+      caso 6
+         Limpatela
+         escreval("---------------------------------------")
+         escreval("|     Sequencia geométrica       |")
+         escreval("---------------------------------------")
+         Escreval("Digite [0] Crescente / [1] Decrescente")
+         escreval("")
+         leia(ordemPG)
+
+         //Tratamento de excecao
+         enquanto (ordemPG <> 0) e (ordemPG <> 1) faca
+            limpatela
+            escreval("Entrada inválida!")
+            Escreval("Digite [0] Crescente / [1] Decrescente")
+            escreval("")
+            leia(ordemPG)
+         fimenquanto
+
+         //Sequencia Geometrica Crescente
+         se ordemPG = 0 entao
+            limpatela
+            escreval("Sequência Geométria Crescente")
+            escreval("---------------------------------------")
+            escreva("Digite o primeiro termo: ")
+            leia(termoInicial)
+            escreva("Digite a razão: ")
+            leia(razaoPG)
+            escreva("Digite a quantidade de termos: ")
+            leia(qtdeTermos)
+            limpatela
+
+            //Cálculo - Crescente
+            resultadoPG <- termoInicial
+            escreval("A sequencia geometrica crescente é: ")
+            Para i de 1 ate qtdeTermos faca
+               Escreval(i, "|", resultadoPG)
+               resultadoPG <- resultadoPG * razaoPG
             fimpara
 
+            //Sequencia Geometrica Decrescente
+         senao
+            limpatela
+            escreval("Sequência Geométria Decrescente")
+            escreval("---------------------------------------")
+            escreva("Digite o primeiro termo: ")
+            leia(termoInicial)
+            escreva("Digite a razão: ")
+            leia(razaoPG)
+            escreva("Digite a quantidade de termos: ")
+            leia(qtdeTermos)
+            limpatela
 
-            escreval ("")
-            escreval ("O fatorial de:", N, " Ã© igual a:", Resultado)
-            escreval ("")
-
-            // Exibindo em lista o Fatorial
-            Resultado <- 1
-            para I <- 1 ate N faca
-               ResultadoAnt <- Resultado
-               Resultado <- Resultado * I
-
-               se I = 1 entao
-                  escreva ("SequÃªncia:", Resultado)
-               senao
-                  escreva (" X", I)
-
-               fimse
+            //Cálculo - Decrescente
+            resultadoPG <- termoInicial
+            Para i de 1 ate qtdeTermos faca
+               resultadoPG <- resultadoPG * razaoPG
             fimpara
 
-            escreva (" =", Resultado)
-            escreval ("")
+            termoDecrescente <- resultadoPG
 
-            //Menu
-            escreval ("")
-            repita
-               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
-               leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
-                  limpatela
-                  escreval ("Entrada invÃ¡lida!")
-               fimse
-            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
-            limpatela
-            // escreval ("Resultado anterior: =", Resultado)
-            // escreval ("")
-
-         atÃ© (Repetir = "nÃ£o")
-
-         escreval ("---------------------------------------")
-      fimse
-
-      se opcao = 3 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 03 - Sequencia de Fibonacci")
-         escreval ("---------------------------------------")
-         Escreval ("Em manutenÃ§Ã£o")
-         escreval ("---------------------------------------")
-      fimse
-
-      se opcao = 4 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 04 - Sequencia de Tribonacci")
-         escreval ("---------------------------------------")
-         Escreval ("Em manutenÃ§Ã£o")
-         escreval ("---------------------------------------")
-      fimse
-
-      se opcao = 5 entao
-
-         repita
-            escreval ("---------------------------------------")
-            escreval (" VocÃª escolheu a opÃ§Ã£o 05 - Quadrados Perfeitos")
-            escreval ("---------------------------------------")
-            // FunÃ§Ã£o quadrados perfeitos
-            escreval ("Digite um nÃºmero para obter os quadrados perfeitos crescentes")
-            leia (n)
-            limpatela
-            SomaAcumulada <- 0
-            para i de 1 atÃ© N faÃ§a
-               quadrado <- i*i
-               SomaAcumulada <-somaAcumulada + quadrado
-               escreval(quadrado, "|", SomaAcumulada)
+            para i de 1 ate qtdeTermos faca
+               termoDecrescente <- termoDecrescente / razaoPG
+               escreval(i,"|", termoDecrescente)
             fimpara
-            // Pergunta para repetir ou parar o programa
-            escreval ("")
-            repita
-               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
-               leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
-                  limpatela
-                  escreval ("Entrada invÃ¡lida!")
-               fimse
-            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
-            limpatela
-            // escreval ("Resultado anterior: =", Resultado)
-            // escreval ("")
+         fimse
 
-         atÃ© (Repetir = "nÃ£o")
+         //Sequencia de cubos
+      caso 7
+         limpatela
+         escreval("---------------------------------------")
+         escreval("|     Sequencia de cubos         |")
+         escreval("---------------------------------------")
+         escreval("Gera uma sequência de números que são o resultado")
+         escreval("de um inteiro elevado à terceira potência")
+         escreval("---------------------------------------")
+         escreval("Digite o número da posição em que deseja iniciar:")
+         leia(inicioCubo)
+         escreval("Digite até qual posição deseja visualizar:")
+         leia(fimCubo)
+         limpatela
+         escreval("---------------------------------------------")
+         escreval(" Quadrados   Cubos")
+         escreval("---------------------------------------------")
+         //Operação da sêquencia com o contador
+         para i de inicioCubo ate fimCubo faca
+            escreval(i, "² =", (i*i), ",", i, "³ =", (i*i*i))
+         fimpara
 
-         escreval ("---------------------------------------")
+         //Sequência Alternada
+      caso 8
+         escreval("---------------------------------------")
+         escreval("|     Sequência Alternada      |")
+         escreval("---------------------------------------")
+         escreval("Cria uma sequência somando e subtraindo")
+         escreval("termos de forma alternada.")
+         escreval("---------------------------------------")
+         escreval("EM BREVE!")
 
+         //Números Triangulares
+      caso 9
+         escreval("---------------------------------------")
+         escreval("|     Números Triangulares     |")
+         escreval("---------------------------------------")
+         escreval("Calcula o número que pode ser representado pela")
+         escreval("soma dos inteiros consecutivos a partir de 1.")
+         escreval("---------------------------------------")
+         escreval("EM BREVE!")
+
+         //Sair
+      caso 0
+         escreval("Saindo da calculadora...")
+
+         //Tratamento de opção inválida
+      outrocaso
+         escreval("---------------------------------------")
+         escreval("         Opção inválida!         ")
+         escreval("Por favor, digite um número do menu.")
+         escreval("---------------------------------------")
+
+      fimescolha // Fim da estrutura 'escolha'
+
+      // Bloco de pausa centralizado
+      // Só executa se a opção não for SAIR (0)
+      se (opcao <> 0) entao
+         escreval("")
+         escreva("Aperte ENTER para voltar ao Menu.")
+         leia(saida) // REVERTIDO DE 'pausa'
+         limpatela
       fimse
 
-      se opcao = 6 entao
-         Repita
-            Limpatela
-            escreval ("---------------------------------------")
-            escreval (" VocÃª escolheu a opÃ§Ã£o 06 - Sequencia geomÃ©trica")
-            escreval ("---------------------------------------")
-            Escreval("VocÃª quer uma sequencia crescente ou decrescente?")
-            escreval ("")
-            Escreval("(0) para crescente")
-            Escreval("(1) para decrescente")
-            leia(ordem)
-
-            enquanto ordem >= 2 faÃ§a
-               limpatela
-               escreval ("Entrada invÃ¡lida!")
-               Escreval("VocÃª quer uma sequencia crescente ou decrescente? 0/1")
-               escreval ("")
-               Escreval("(0) para crescente")
-               Escreval("(1) para decrescente")
-               leia(ordem)
-            fimenquanto
-
-            se ordem =0 entao
-               limpatela
-               escreval("Escolheu crescente!")
-               escreval ("---------------------------------------")
-               Escreval("Me fale o primeiro termo")
-               Leia(numero1)
-               Escreval("Me fale a razÃ£o")
-               leia(razao)
-               Escreval("Qual o numero de termos")
-               leia(numero2)
-               limpatela
-               resultado <- numero1
-               escreval("A sequencia geometrica crescente Ã©")
-               Para i de 1 ate numero2 faca
-                  Escreval(i, "|", resultado)
-                  resultado<-resultado*razao
-               fimpara
-            senao
-               limpatela
-               escreval("Escolheu decrescente!")
-               escreval ("---------------------------------------")
-               Escreval("Me fale o primeiro termo")
-               Leia(numero1)
-               Escreval("Me fale a razÃ£o")
-               leia(razao)
-               Escreval("Qual o numero de termos")
-               leia(numero2)
-               limpatela
-               resultado <- numero1
-               Para i de 1 ate numero2 faca
-                  resultado<-resultado*razao
-               fimpara
-
-               menos<-resultado
-
-               para i de 1 ate numero2 faca
-                  menos <- menos/razao
-                  escreval(i,"|", menos)
-               fimpara
-
-
-            fimse
-            // Pergunta para repetir ou parar o programa
-            escreval ("")
-            repita
-               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
-               leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
-                  limpatela
-                  escreval ("Entrada invÃ¡lida!")
-               fimse
-            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
-            limpatela
-            // escreval ("Resultado anterior: =", Resultado)
-            // escreval ("")
-
-         atÃ© (Repetir = "nÃ£o")
-
-         escreval ("---------------------------------------")
-
-      fimse
-
-      se opcao = 7 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 07 - Sequencia de cubos")
-         escreval ("---------------------------------------")
-         repita
-            escreval("Digite o nÃºmero da posiÃ§Ã£o em que deseja iniciar:")
-            leia(numero1)
-            escreval("Digite atÃ© qual posiÃ§Ã£o deseja vizualizar:")
-            leia(numero2)
-            limpatela
-
-            //operaÃ§Ã£o da sÃªquencia com o contador
-            para i de numero1 ate numero2 faca
-               escrevaL(i, "Â² =", (i*i), ",",  i, "Â³ =", (i*i*i))
-            fimpara
-
-            // Pergunta para repetir ou parar o programa
-            escreval ("")
-            repita
-               escreval ("Deseja calcular mais uma vez? sim/nÃ£o ")
-               leia (Repetir)
-               se (Repetir <> "sim") e (Repetir <> "nÃ£o") entao
-                  limpatela
-                  escreval ("Entrada invÃ¡lida!")
-               fimse
-            atÃ© (Repetir="sim") ou (Repetir="nÃ£o")
-            limpatela
-            //escreval ("Resultado anterior: =", Resultado)
-            // escreval ("")
-
-         atÃ© (Repetir = "nÃ£o")
-
-         escreval ("---------------------------------------")
-      fimse
-
-      // ValidaÃ§Ã£o da resposta para repetir ou parar o programa
-
-
-      se opcao = 8 entao
-         escreval ("---------------------------------------")
-         escreval (" VocÃª escolheu a opÃ§Ã£o 08 - SAIR")
-         escreval ("---------------------------------------")
-      fimse
-
-
-   fimenquanto
-
-Fimalgoritmo
+   fimenquanto // Fim do loop principal
+fimalgoritmo
