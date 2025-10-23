@@ -8,22 +8,22 @@ Algoritmo "calculadora_sequenciais"
 // Data atual : 25/09/2025
 
 Var
-// --- Variáveis de Controle Principal (Menu e Loop) ---
-opcao: inteiro
-saida: caractere
-// --- Variável de Loop Genérica ---
-i: inteiro
-// --- Variáveis por Função (Caso) ---
-// caso 2 (Fatorial)
-numFatorial: inteiro
-resultadoFatorial, resultadoAnterior: real
-// caso 5 (Quadrado Perfeito)
-limiteQuadrados, quadradoAtual, somaAcumulada: inteiro
-// caso 6 (Sequência Geométrica)
-ordemPG,termoInicial, razaoPG,qtdeTermos : inteiro
-resultadoPG, termoDecrescente: real
-// caso 7 (Sequência de Cubos)
-inicioCubo, fimCubo: inteiro
+   // --- Variáveis de Controle Principal (Menu e Loop) ---
+   opcao: inteiro
+   saida: caractere
+   // --- Variável de Loop Genérica ---
+   i: inteiro
+   // --- Variáveis por Função (Caso) ---
+   // caso 2 (Fatorial)
+   numFatorial: inteiro
+   resultadoFatorial, resultadoAnterior: real
+   // caso 5 (Quadrado Perfeito)
+   limiteQuadrados, quadradoAtual, somaAcumulada: inteiro
+   // caso 6 (Sequência Geométrica)
+   ordemPG,termoInicial, razaoPG,qtdeTermos : inteiro
+   resultadoPG, termoDecrescente: real
+   // caso 7 (Sequência de Cubos)
+   inicioCubo, fimCubo: inteiro
 
 
 Inicio
@@ -52,22 +52,22 @@ Inicio
       escolha (opcao)
          //Numeros Primos//
       caso 1
-         escreval("---------------------------------------")
-         escreval("|       Números Primos         |")
-         escreval("---------------------------------------")
-         escreval("Identifica números que são divisíveis")
-         escreval("apenas por 1 e por eles próprios.")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                    NÚMEROS PRIMOS                          |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Lista os 'n' primeiros números primos                      |")
+         escreval("| e mostra a distância entre eles.                           |")
+         escreval("--------------------------------------------------------------")
          escreval("EM BREVE!")
 
          //Fatorial//
       caso 2
-         escreval("----------------------------------------")
-         escreval("|          Fatorial           |")
-         escreval("----------------------------------------")
-         escreval("Calcula o produto de um número por todos")
-         escreval("os seus antecessores inteiros positivos.")
-         escreval("----------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                         FATORIAL                           |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Calcula o fatorial de um número positivo                   |")
+         escreval("| e exibe o processo de multiplicação passo a passo.         |")
+         escreval("--------------------------------------------------------------")
 
          escreva ("Informe um número de 0 até 170 para calcular o fatorial: ")
          leia (numFatorial)
@@ -90,32 +90,32 @@ Inicio
 
          //Fibonacci//
       caso 3
-         escreval("---------------------------------------")
-         escreval("|     Sequência de Fibonacci     |")
-         escreval("---------------------------------------")
-         escreval("Gera uma sequência onde cada número é a")
-         escreval("soma dos dois anteriores.")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                SEQUÊNCIA DE FIBONACCI                      |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Gera a sequência de Fibonacci até 'n'                      |")
+         escreval("| ou calcula um termo específico.                            |")
+         escreval("--------------------------------------------------------------")
          escreval("EM BREVE!")
 
          //Tribonacci//
       caso 4
-         escreval("---------------------------------------")
-         escreval("     Sequência de Tribonacci       ")
-         escreval("---------------------------------------")
-         escreval("Gera uma sequência onde cada número é a")
-         escreval("soma dos três anteriores")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                SEQUÊNCIA DE TRIBONACCI                     |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Gera 'n' termos de uma seq. de Tribonacci                  |")
+         escreval("| e exibe a soma e as diferenças.                            |")
+         escreval("--------------------------------------------------------------")
          escreval("EM BREVE!")
 
          //Quadrados Perfeitos//
       caso 5
-         escreval("---------------------------------------")
-         escreval("|      Quadrados Perfeitos       |")
-         escreval("---------------------------------------")
-         escreval("Verifica se um número é o resultado de outro")
-         escreval("número inteiro multiplicado por si mesmo.")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                  QUADRADOS PERFEITOS                       |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Mostra os quadrados perfeitos em ordem crescente           |")
+         escreval("| e exibe a soma acumulada da sequência.                     |")
+         escreval("--------------------------------------------------------------")
          escreval("Digite um número para obter os quadrados perfeitos crescentes")
          leia (limiteQuadrados)
          limpatela
@@ -132,10 +132,13 @@ Inicio
          //Sequencia Geometrica
       caso 6
          Limpatela
-         escreval("---------------------------------------")
-         escreval("|     Sequencia geométrica       |")
-         escreval("---------------------------------------")
-         Escreval("Digite [0] Crescente / [1] Decrescente")
+         escreval("--------------------------------------------------------------")
+         escreval("|                  SEQUÊNCIA GEOMÉTRICA                      |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Gera 'n' termos de uma sequência geométrica                |")
+         escreval("| e os exibe na ordem normal e inversa.                      |")
+         escreval("--------------------------------------------------------------")
+         Escreval("DIGITE [0] CRESCENTE / [1] DECRESCENTE")
          escreval("")
          leia(ordemPG)
 
@@ -199,12 +202,12 @@ Inicio
          //Sequencia de cubos
       caso 7
          limpatela
-         escreval("---------------------------------------")
-         escreval("|     Sequencia de cubos         |")
-         escreval("---------------------------------------")
-         escreval("Gera uma sequência de números que são o resultado")
-         escreval("de um inteiro elevado à terceira potência")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                    CUBOS VS. QUADRADOS                     |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Compara visualmente os números ao cubo                     |")
+         escreval("| com os seus respectivos quadrados.                         |")
+         escreval("--------------------------------------------------------------")
          escreval("Digite o número da posição em que deseja iniciar:")
          leia(inicioCubo)
          escreval("Digite até qual posição deseja visualizar:")
@@ -220,22 +223,22 @@ Inicio
 
          //Sequência Alternada
       caso 8
-         escreval("---------------------------------------")
-         escreval("|     Sequência Alternada      |")
-         escreval("---------------------------------------")
-         escreval("Cria uma sequência somando e subtraindo")
-         escreval("termos de forma alternada.")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|             ADIÇÃO/SUBTRAÇÃO ALTERNADA                     |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Gera uma sequência com adição e subtração alternadas       |")
+         escreval("| (ex: +3, -2).                                              |")
+         escreval("--------------------------------------------------------------")
          escreval("EM BREVE!")
 
          //Números Triangulares
       caso 9
-         escreval("---------------------------------------")
-         escreval("|     Números Triangulares     |")
-         escreval("---------------------------------------")
-         escreval("Calcula o número que pode ser representado pela")
-         escreval("soma dos inteiros consecutivos a partir de 1.")
-         escreval("---------------------------------------")
+         escreval("--------------------------------------------------------------")
+         escreval("|                  NÚMEROS TRIANGULARES                      |")
+         escreval("--------------------------------------------------------------")
+         escreval("| Gera 'k' números triangulares                              |")
+         escreval("| consecutivos a partir da posição 'n'.                      |")
+         escreval("--------------------------------------------------------------")
          escreval("EM BREVE!")
 
          //Sair
