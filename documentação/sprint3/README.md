@@ -1,15 +1,14 @@
-# Documentação - Sprint 2
+# Documentação - Sprint 3
 
-> Status da Sprint: Concluída ✅ 
+> Status da Sprint: Em andamento  
 > 
  
 ## 📋 sprint backlog  <a id="us"></a>
 
 | Rank | Prioridade | User Story                                                                                                                                                                                                                 | Sprint |
 | :--: | :--------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: |
-|  5   |   media    | Como usuário da calculadora, quero definir os três primeiros termos iniciais da sequência de Tribonacci e gerar os próximos n termos, visualizar as diferenças entre termos consecutivos e também a soma acumulada.        |   2  | 
-|  6   |   Média    | Como usuário da calculadora, quero gerar a sequência de Fibonacci a partir da posição 0 até n, podendo também calcular diretamente o n-ésimo termo da sequência ao informar a posição desejada.                       |   2  |
-|  7   |   Média    | Como usuário, quero gerar os n primeiros números primos e exibir a diferença entre eles, para observar padrões e variações na distribuição dos primos.                                                                    |   2  |                                  |   1   |
+|  8   |   Baixa    | Como usuário da calculadora, desejo definir uma posição inicial n e gerar os próximos k números triangulares a partir dela, para analisar segmentos intermediários ou avançados da sequência.                               |  3    | 
+|  9   |   Baixa    | Como usuário, quero definir um padrão de adição e subtração alternados (ex: +3, -2) e informar quantos termos desejo gerar, começando de um valor inicial igual a zero, para visualizar a sequência completa.              |   3    | 
 
 ## 🏅 DoR - Definition of Ready <a id="dor"></a>
 
