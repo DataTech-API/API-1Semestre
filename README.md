@@ -54,7 +54,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 | ------ | :----: | ---- |
 | 1 |  concluida | [Sprint 1 Docs](documentação/sprint1) |
 | 2 |  concluida | [Sprint 2 Docs](documentação/sprint2) |
-| 3 |  não iniciada | ❌ |
+| 3 |  em andamento | [Sprint 3 Docs](documentação/sprint3) |
 
 
 # 💻 Tecnologias <a id="tecnologias"></a>
@@ -82,7 +82,9 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
          manual_instalacao.md
          manual_usuario.md
       → sprint1
-
+      → sprint2
+      → sprint3
+    
 
   ````sprint1````/ → Documentação da Sprint 1.
     Contém: 
@@ -124,12 +126,6 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
       <td>Scrum Master</td>
       <td><a href="https://github.com/Thayssa-Andrade"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/thayssa-andrade?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-        <td>Ana Beatriz Cardoso</td>
-      <td>Desenvolvedor</td>
-      <td><a href="https://github.com/anabcardosos"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/ana-cardoso-338513185"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
             <td>Bruna Matsuda</td>
