@@ -58,15 +58,14 @@ Resultado: 5! = 120
 📌 **Exemplo (entrada: 8):**
 
 ```
-Termo 0 = 0
-Termo 1 = 1
+Termo 1 = 0
 Termo 2 = 1
-Termo 3 = 2
-Termo 4 = 3
-Termo 5 = 5
-Termo 6 = 8
-Termo 7 = 13
-Termo 8 = 21
+Termo 3 = 1
+Termo 4 = 2
+Termo 5 = 3
+Termo 6 = 5
+Termo 7 = 8
+Termo 8 = 13
 
 O termo 8 é igual a 21
 ```
