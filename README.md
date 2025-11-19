@@ -45,7 +45,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 | ------ | :-----: | ---- |
 | 1 | 08/09 - 28/09 | [Sprint 1 Docs](documentação/sprint1) |
 | 2 | 06/10 - 26/10 | [Sprint 2 Docs](documentação/sprint2) |
-| 3 | 03/11 - 23/11 | ❌ |
+| 3 | 03/11 - 23/11 |  [Sprint 3 Docs](documentação/sprint3) |
 
 
 ## 📅 DoR e DoD <a id="dod"></a>
