@@ -1,6 +1,6 @@
 # Documentação - Sprint 2
 
-> Status da Sprint: Em Andamento 
+> Status da Sprint: Concluída ✅ 
 > 
  
 ## 📋 sprint backlog  <a id="us"></a>

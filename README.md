@@ -53,7 +53,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 | Sprint | Status | Docs |
 | ------ | :----: | ---- |
 | 1 |  concluida | [Sprint 1 Docs](documentação/sprint1) |
-| 2 |  em andamento | [Sprint 2 Docs](documentação/sprint2) |
+| 2 |  concluida | [Sprint 2 Docs](documentação/sprint2) |
 | 3 |  não iniciada | ❌ |
 
 
