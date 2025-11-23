@@ -54,14 +54,14 @@ Primo: 13 | diferença: 2
 
 📌 **Exemplo, Gerar N termos (entrada: 8):**
 ```
-Posição 1 = 0
-Posição 2 = 1
-Posição 3 = 1
-Posição 4 = 2
-Posição 5 = 3
-Posição 6 = 5
-Posição 7 = 8
-Posição 8 = 13
+Posição: 1 | Valor: 0
+Posição: 2 | Valor: 1
+Posição: 3 | Valor: 1
+Posição: 4 | Valor: 2
+Posição: 5 | Valor: 3
+Posição: 6 | Valor: 5
+Posição: 7 | Valor: 8
+Posição: 8 | Valor: 13
 ```
 
 📌 **Exemplo, Calcular termo pela posição (entrada: 9):**
@@ -93,7 +93,7 @@ O termo 9 da sequência de Fibonacci é 21
 6º Termo:	13 | Diferença: 6
 7º Termo:	24 | Diferença: 11
 ---	---	--- ---	---	--- ---	---	--
-Soma acumulada até o 7º termo:	52
+Soma até o 7º termo:	52
 ---	---	--- ---	---	--- ---	---	--
 ```
 
