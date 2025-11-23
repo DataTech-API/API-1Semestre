@@ -75,14 +75,10 @@ O termo 9 da sequência de Fibonacci é 21
 ### 04 - Tribonacci
 
 * Usuário informa os **três primeiros termos da sequência**.
-* O programa gera os demais termos até n.
-* Exibe:
-  
-  * Sequência completa
-  * Diferenças entre termos consecutivos
-  * Soma dos termos
+* O programa gera os proximos n termos informados pelo usuario.
 
-📌 **Exemplo (primeiros termos: 1, 1, 2 | total: 7):**
+
+📌 **Exemplo (primeiros termos: 1, 1, 2 | n: 4):**
 
 ```
 1º Termo:	1  | Diferença: 0
