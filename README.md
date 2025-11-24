@@ -2,8 +2,6 @@
 
 ![LogoDataTech](https://github.com/user-attachments/assets/39dec93f-3d58-4b16-a922-40cedd2e4c49)
 
-
-
 <p align="center">
   <a href="#desafio"> Desafio</a> |
   <a href="#backlog"> Backlog</a> |
