@@ -1,6 +1,6 @@
 # Documentação - Sprint 3
 
-> Status da Sprint: Em andamento  
+> Status da Sprint: Concluido ✅  
 > 
  
 ## 📋 sprint backlog  <a id="us"></a>
