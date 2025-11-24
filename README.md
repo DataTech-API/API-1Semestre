@@ -51,7 +51,7 @@ A proposta reforça habilidades de raciocínio lógico, análise de padrões e r
 | ------ | :----: | ---- |
 | 1 |  concluida | [Sprint 1 Docs](documentação/sprint1) |
 | 2 |  concluida | [Sprint 2 Docs](documentação/sprint2) |
-| 3 |  em andamento | [Sprint 3 Docs](documentação/sprint3) |
+| 3 |  concluida | [Sprint 3 Docs](documentação/sprint3) |
 
 
 # 💻 Tecnologias <a id="tecnologias"></a>
