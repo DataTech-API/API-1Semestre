@@ -249,6 +249,8 @@ Inicio
                      termo1 <- termo2
                      termo2 <- proximo
                   fimpara
+                  termo1 <- 0
+                  termo2 <- 1
                   escreval("--------------------------------------------------------------")
                   //fimse
                fimse
