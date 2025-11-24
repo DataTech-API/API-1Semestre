@@ -1,8 +1,7 @@
 <h1 align="center"> Calculadora de Sequências Lógicas</h1>
 
-<p align="center">
-  <img src="documentação/imagem/data-tech-logo.png" width="1080" alt="Calculadora">
-</p>
+![LogoDataTech](https://github.com/user-attachments/assets/39dec93f-3d58-4b16-a922-40cedd2e4c49)
+
 
 
 <p align="center">
